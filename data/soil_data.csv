@@ -1,0 +1,4 @@
+timestamp,location,moisture,ph,nitrogen,phosphorus,potassium
+   2025-06-14T12:00:00Z,Bed A,45.2,6.5,10,5,8
+   2025-06-14T12:00:00Z,Bed B,50.1,6.8,12,6,9
+   2025-06-14T12:00:00Z,Bed C,42.3,6.2,8,4,7
