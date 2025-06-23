@@ -10,9 +10,9 @@ Managing urban gardens involves constant monitoring of diverse data (soil, weath
 
 **FloraOS automates this by orchestrating four distinct agents via ADK:**
 
-1.  **SoilSensorAgent:** Simulates soil sensor readings (moisture, pH, NPK) from a predefined dataset, publishing structured data.
-2.  **WeatherAgent:** Fetches current weather and forecasts using the OpenWeatherMap API (or simulated data), publishing structured weather updates.
-3.  **PlantVisionAgent:** Analyzes plant images using **Google Cloud Vertex AI Vision** (Custom Classification Model) to assess health status (e.g., "Needs Water," "Nutrient Deficient"), publishing these assessments.
+1.  **SoilSensorAgent (Data Scientist 1):** Simulates soil sensor readings (moisture, pH, NPK) from a predefined dataset, publishing structured data.
+2.  **WeatherAgent(Data Scientist 2):** Fetches current weather and forecasts using the OpenWeatherMap API (or simulated data), publishing structured weather updates.
+3.  **PlantVisionAgent (Data Scientist 3):** Analyzes plant images using **Google Cloud Vertex AI Vision** (Custom Classification Model) to assess health status (e.g., "Needs Water," "Nutrient Deficient"), publishing these assessments.
 4.  **GardenControlAgent (The Brain):** Subscribes to data from all other agents. Applies rule-based logic (e.g., if soil is dry, no rain forecasted, and plant is wilting, then trigger watering) and publishes (simulated) action commands.
 
 This creates an automated feedback loop for garden care.
